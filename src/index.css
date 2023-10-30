@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand';
+}
+:root{
+  --gunmetal: #022b3a;
+  --gunmetaltrans: #022b3a63;
+  --teal : #1F7A8C;
+  --columbiablue : #BFDBF7;
+  --lavender: #E1E5F2;
+}
+.navigation {
+  position: absolute;
+  left: -80px;
+  width: 100px;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  transition: all .5s;
+  
+}
+
+.navigation ul{
+  height: 80vh;
+  width: 100px;
+  display: flex;
+  flex-flow: column;
+  background-color:var(--lavender);
+  box-shadow: 2px 2px 5px rgb(106, 102, 102);
+  justify-content: space-evenly;
+  align-items:center;
+  border-radius:25px;
+  
+}
+.links ul a{
+  padding: 2px;
+  margin: 1px;
+  text-decoration: none;
+  color: green;
+  display: block;
+  width: 60px;
+  
+}
+.navigation:hover{
+
+  left: -20px;
+}
+/* home */
+.home::before{
+  position: absolute;
+  content: "";
+  background: url();
+
+}
+/* Calendar css  */
+.calendarDiv{
+  margin: 20px;
+  background-color: var(--gunmetaltrans);
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+iframe{
+  margin: 20px;
+  border:solid 1px #777;
+  width:400px;
+  height:300px;
+  border: 0;
+  
+                
+}
+
+/* Tools Links css */
+.toolsLink{
+  background-color: var(--gunmetaltrans);
+  width: 200px;
+  height: 450px;
+  
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.toolsLink ol{
+ 
+  width: 200px;
+  
+  height: 450px;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  
+  overflow:scroll;
+  
+  background-color: var(--gunmetaltrans);
+}
+.toolsLink ol li{
+  margin-top: 0;
+  
+  padding: 8px;
+  
+  margin: 2px;
+  font-size: 17px;
+  color: var(--gunmetal);
+  
+}
+
+.toolsLink ol li a{
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 13px;
+  color: var(--gunmetal);
+  font-weight: 600;
+}
+.toolsLink ol li a:hover{
+  color: var(--lavender);
+  background-color: #022b3a;
+
+}
+
+.linkBars{
+  display: flex;
+
+}
+.toolsLink h2{
+  color: var(--gunmetal);
+  padding: 3px;
+  margin: 3px;
+  font-weight: 1000;
+}
