@@ -1,7 +1,10 @@
-const InfoBar = () => {
+const InfoBar = ({image_link}) => {
     return ( 
+        
         <div className="infobar">
-            <h1>Hello React</h1>
+            
+            <img src={image_link} alt="" width="50px"/>
+            <h1>Hello Suppandi</h1>
         </div>
      );
 }

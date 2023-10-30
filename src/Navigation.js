@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom';
 
 const Navigation = () => {
 
@@ -7,11 +7,11 @@ const Navigation = () => {
         <div className="navigation">
             
                <ul>
-                <a to = "/"         >Home</a>
-                <a to = "/Calendar" >Calendar</a>
-                <a to = "/Tools"    >DevTools</a>
-                <a to = "/QuickLinks">QuicLinks</a>
-                <a to = "/Spotify"  >Spotify</a>
+              
+                <Link to = "/"         >Home        </Link>
+                <Link to = "/calendar" >Calendar    </Link>
+                <Link to = "/toolsdetails">DevTools </Link>
+                <Link to = "/Spotify"  >Spotify     </Link>
                </ul>
             
         </div>
