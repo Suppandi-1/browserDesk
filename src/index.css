@@ -33,6 +33,7 @@
   justify-content: left;
   margin: auto;
   padding: auto;
+  flex-direction: column;
   
 }
 .home{
@@ -59,7 +60,7 @@
   
 }
 .navigationul{
-  height: 70%;
+  height: 80%;
   width: 140px;
   display: flex;
   flex-flow: column;
@@ -95,7 +96,7 @@
 }
 /* infobar */
 .infobar{display: flex;
-  width: 100%;
+  width: 95%;
   height: 50px;
   display: flex;
   padding: 0 2px;
@@ -123,8 +124,8 @@
 .calendarDiv iframe{
   margin: 10px;
   border:solid 1px #777;
-  width:400px;
-  height:300px;
+  width:600px;
+  height:400px;
   border: 0;             
 }
 
@@ -168,7 +169,7 @@
   
   margin: 2px;
   font-size: 17px;
-  color: var(--gunmetal);
+  color: var(--lavender);
   
 }
 
@@ -176,12 +177,15 @@
   text-decoration: none;
   padding: 8px;
   border-radius: 13px;
-  color: var(--gunmetal);
-  font-weight: 600;
+  color: var(--columbiablue);
+  font-weight: 900;
+  
 }
 .toolsLink ol li a:hover{
-  color: var(--lavender);
-  background-color: #022b3a;
+  color: var(--gunmetal);
+  background-color: var(--p5);
+  text-shadow: none;
+  box-shadow: 0 0 6px var(--lavender);
 
 }
 
@@ -216,18 +220,21 @@
 /*tools details */
 .toolsdtails{
   /* border: 2px solid green; */
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  height: 95vh;
   display: flex;
   
-  justify-content: left;
+  justify-content:left;
   padding: 0 20px;
-  align-items: center;
+  align-items:center;
 }
 .toolsdtails>div{
   /* border: 2px solid yellow; */
   height: 80%;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
 }
 .toolsdtails>div ol{
   /* border: 2px solid pink; */
@@ -238,6 +245,7 @@
   height: 90% ;
   box-shadow: 1px 1px 10px var(--columbiablue);
   border-radius: 10px;
+  overflow: scroll;
 }
 .toolsdtails>div>ol>li{
   list-style: none;

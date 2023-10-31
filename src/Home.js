@@ -5,7 +5,6 @@ import ToolsLinks from "./ToolsLink";
 
 
 const Home = () => {
-    const image = 'https://i.ibb.co/zHJ4nL7/Hydro74.jpg';
     const devToolsUrl = 'https://databaseofproject.onrender.com/devtoolslinks/';
     const quickLinksUrl = 'https://databaseofproject.onrender.com/QuickLinks/';
     const codeLinksUrl = 'https://databaseofproject.onrender.com/CodeLinks/';
@@ -15,7 +14,6 @@ const Home = () => {
    
     return ( 
         <div className="home">
-            <InfoBar image_link={image}/>
             <Calendar/>
             <div className="linkBars">
                 <ToolsLinks url={devToolsUrl}  heading="DevTools"/>
