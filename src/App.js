@@ -6,6 +6,7 @@ import { BrowserRouter as Router , Route, Switch } from 'react-router-dom/cjs/re
 import ToolsDetails from './ToolsDetails';
 import CalendarDetails from './CalendarDetails';
 function App() {
+  const devToolsUrl = 'https://databaseofproject.onrender.com/devtoolslinks/';
   
 
   return (
@@ -21,7 +22,7 @@ function App() {
             <CalendarDetails/>
           </Route>
           <Route path ="/toolsdetails">
-            <ToolsDetails/>
+            <ToolsDetails url={devToolsUrl} heading="DevTools"/>
           </Route> 
         </Switch>
       </div>
