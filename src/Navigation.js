@@ -9,9 +9,9 @@ const Navigation = () => {
               
                 <Link to = "/"         >Home        </Link>
                 <Link to = "/calendar" >Calendar    </Link>
-                <Link to = "/devtools">DevTools     </Link>
-                <Link to = "/quicklinks">Q-Links</Link>
-                <Link to = "/codelinks">Codings     </Link>
+                <Link to = "/DevTools">DevTools     </Link>
+                <Link to = "/Quick-Links">Q-Links</Link>
+                <Link to = "/CodingLinks">Codings     </Link>
                 <Link to = "/Spotify"  >Spotify     </Link>
                </ul>
                

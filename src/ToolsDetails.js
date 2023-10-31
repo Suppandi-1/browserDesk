@@ -13,7 +13,7 @@ const ToolsDetails = ({url,heading}) => {
             method:'DELETE'
         }).then(() => {
             
-            history.push('/toolsdetails')
+            history.push('/devtools');
             window.location.reload(false);
         })
     }

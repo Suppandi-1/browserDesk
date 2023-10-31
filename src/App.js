@@ -26,14 +26,14 @@ function App() {
           <Route path ="/calendar">
             <CalendarDetails/>
           </Route>
-          <Route path ="/devtools">
-            <ToolsDetails url={devToolsUrl} heading="DevTools"/>
+          <Route path ="/DevTools">
+            <ToolsDetails url={devToolsUrl} heading="c"/>
           </Route> 
-          <Route path ="/quicklinks">
+          <Route path ="/Quick-Links">
             <ToolsDetails url={quickLinksUrl} heading="Quick-Links"/>
 
           </Route>
-          <Route path ="/codelinks">
+          <Route path ="/CodingLinks">
             <ToolsDetails url={codeLinksUrl} heading="CodingLinks"/>
           </Route>
         </Switch>
