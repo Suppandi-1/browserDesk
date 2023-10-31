@@ -53,6 +53,7 @@
 }
 .navigation:hover{
   left: -60px;
+
 }
 .navigation:hover .navigationul{
   background-color: var(--p6);
@@ -203,15 +204,16 @@
 /* CalenderDivDetails */
 .calendarDivD{
   width: 80vw;
-  height: 100vh;
+  height: 90vh;
   margin: auto;
+  padding: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin: 0 10vw;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 4vh;
+  font-family: 'Quicksand';
 }
 .calendarDivD iframe{
   width: 80vw;
