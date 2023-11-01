@@ -1,7 +1,7 @@
 
 import useFetch from "./useFetch";
-import React, { useEffect } from "react";
-import { useHistory, useParams } from "react-router-dom/cjs/react-router-dom.min";
+
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 const ToolsDetails = ({url,heading}) => {
     const {data:links, isPending, error} = useFetch(url);
@@ -13,7 +13,7 @@ const ToolsDetails = ({url,heading}) => {
             method:'DELETE'
         }).then(() => {
             
-            history.push('/devtools');
+            history.push(`${heading}`);
             window.location.reload(false);
         })
     }

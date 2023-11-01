@@ -27,7 +27,7 @@ function App() {
             <CalendarDetails/>
           </Route>
           <Route path ="/DevTools">
-            <ToolsDetails url={devToolsUrl} heading="c"/>
+            <ToolsDetails url={devToolsUrl} heading="DevTools"/>
           </Route> 
           <Route path ="/Quick-Links">
             <ToolsDetails url={quickLinksUrl} heading="Quick-Links"/>
