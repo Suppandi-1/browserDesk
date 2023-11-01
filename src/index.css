@@ -305,3 +305,68 @@
   font-weight: 1000;
   text-align: center;
 }
+
+/* Create  */
+#create{
+  display: flex ;
+  width: 40vw;
+  align-items: center;
+  justify-content: top;
+  border: 2px solid black;
+}
+#create form{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 600;
+  justify-content: top;
+  border: 2px solid green;
+  height: 80%;
+}
+
+#create form label{
+  width: 100%;
+  margin: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  background-color: var(--gunmetal);
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+#create form label h4{
+  width: 200px;
+  text-align: center;
+  color: var(--columbiablue);
+}
+#create form label input{
+  width: 50%;
+  text-align: right;
+  font: 'Quicksand';
+  font-size: 20px;
+  color: #022b3a;
+}
+#create form label select{
+  text-align: right;
+  font: 'Quicksand';
+  font-size: 20px;
+  color: #022b3a;
+}
+#create button{
+  width: 30%;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--p1);
+  border-radius: 15px;
+  border: 1px solid black;
+}
+#create button:hover{
+  border: 2px solid var(--teal);
+  box-shadow: 0px 0px 10px var(--teal);
+
+}
+
