@@ -11,8 +11,7 @@ const ToolsDetails = ({url,heading}) => {
     const history = useHistory();
     const [name, setName] = useState('');
     const [link, setLink] = useState(null);
-    // const [group, setGroup] = useState(`${heading}`);
-    const [IsPending, setIsPending] = useState(true);
+    
 
     
     const handleDelete = (id) =>{
@@ -29,7 +28,7 @@ const ToolsDetails = ({url,heading}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const shortCut = {linkDiscription:name ,  link  };
-        setIsPending(true);
+        
 
         fetch(url , {
             method :'POST',
@@ -37,7 +36,7 @@ const ToolsDetails = ({url,heading}) => {
             body: JSON.stringify(shortCut)
         })
         .then(()=>{
-            setIsPending(false)
+            
             history.push(`${heading}`);
             window.location.reload(false);
         })
@@ -69,13 +68,6 @@ const ToolsDetails = ({url,heading}) => {
                     <label><h4>ShortCut Link</h4>
                     <input type="text" required value={link} onChange={(e)=> setLink(e.target.value)}></input></label>
 
-                    {/* <label><h4>Added to group </h4>
-                    <select value={group} onChange={(e) => setGroup(e.target.value)}>
-
-                        <option value="DevTools">DevTools</option>
-                        <option value="Quick-Links">Quick-Links</option>
-                        <option value="CodingLinks">CodingLinks</option>
-                    </select></label> */}
                     <button onClick={(e) => handleSubmit(e)}>Add ShortCut Link</button>
                 </form>
             </div>
